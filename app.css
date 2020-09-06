@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+li,
+ol {
+  list-style-type: none;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: aquamarine;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.card {
+  width: 300px;
+  height: 500px;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+  background-color: blue;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 300ms all;
+  -webkit-transition: 300ms all;
+  -moz-transition: 300ms all;
+  -ms-transition: 300ms all;
+  -o-transition: 300ms all;
+}
+.overlay {
+  position: absolute;
+  left: 0;
+  bottom: -60%;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  color: black;
+  padding: 12%;
+  border-radius: 30px 0 0 0;
+  transition: 300ms all;
+  -webkit-transition: 300ms all;
+  -moz-transition: 300ms all;
+  -ms-transition: 300ms all;
+  -o-transition: 300ms all;
+  -webkit-border-radius: 30px 0 0 0;
+  -moz-border-radius: 30px 0 0 0;
+  -ms-border-radius: 30px 0 0 0;
+  -o-border-radius: 30px 0 0 0;
+}
+
+.overlay-text h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 17px;
+}
+
+.overlay-text p {
+  font-size: 18px;
+}
+.overlay-text a {
+  display: block;
+  width: 150px;
+  height: 50px;
+  background-color: blue;
+  color: white;
+  text-align: center;
+  line-height: 50px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  letter-spacing: 1px;
+  margin-top: 80px;
+  transition: 300ms all;
+  -webkit-transition: 300ms all;
+  -moz-transition: 300ms all;
+  -ms-transition: 300ms all;
+  -o-transition: 300ms all;
+}
+
+.overlay-text a i {
+  font-size: 12px;
+  display: inline-block;
+  margin-left: -17px;
+  opacity: 0;
+  transition: 300ms all;
+  -webkit-transition: 300ms all;
+  -moz-transition: 300ms all;
+  -ms-transition: 300ms all;
+  -o-transition: 300ms all;
+}
+
+.overlay-text a:hover {
+  background-color: crimson;
+}
+
+.overlay-text a:hover i {
+  opacity: 1;
+  margin-left: 2px;
+}
+
+.card:hover .overlay {
+  bottom: -50;
+}
+
+.card:hover .overlay-text a {
+  margin-top: 10px;
+}
+
+.card:hover img {
+  transform: scale(1.2) translateY(-20px);
+  -webkit-transform: scale(1.2) translateY(-20px);
+  -moz-transform: scale(1.2) translateY(-20px);
+  -ms-transform: scale(1.2) translateY(-20px);
+  -o-transform: scale(1.2) translateY(-20px);
+  opacity: 0.7;
+}
